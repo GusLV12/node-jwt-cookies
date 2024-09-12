@@ -1,0 +1,16 @@
+{
+  "extends": ["standard"],
+  "rules": {
+    "semi": ["error", "always"], // Exigir punto y coma
+    "no-unused-vars": ["warn"], // Variables no utilizadas como advertencia
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "always", // Exigir siempre la extensión .js
+        "json": "always", // Exigir siempre la extensión .json
+        "jsx": "never" // No exigir la extensión .jsx
+      }
+    ]
+  }
+}
